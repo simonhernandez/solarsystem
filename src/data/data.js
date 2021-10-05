@@ -1,4 +1,4 @@
-export default [
+const data = [
     {
       "name": "Mercury",
       "overview": {
@@ -191,4 +191,6 @@ export default [
         "geology": "./assets/geology-neptune.png"
       }
     }
-  ]
+  ];
+
+  export default data;

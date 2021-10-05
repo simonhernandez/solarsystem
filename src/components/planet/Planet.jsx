@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Container, PlanetButtonContainer, PlanetInfoLink, PlanetImg, PlanetSummary, PlanetDetailsList, PlanetDetailsItem} from "./Planet.styled";
+import { Container, PlanetButtonContainer, PlanetImg, PlanetSummary, PlanetDetailsList, PlanetDetailsItem} from "./Planet.styled";
 
 const Planet = ({ planetData }) => {
 
@@ -39,6 +39,7 @@ const Planet = ({ planetData }) => {
 
     useEffect(() => {
         setRotate(rotate + 360);
+        // eslint-disable-next-line
     }, [name, index]);
 
     useEffect(() => {
@@ -94,7 +95,7 @@ const Planet = ({ planetData }) => {
             <PlanetSummary>
                 <h1>{name}</h1>
                 <p className="content">{Object.values(summaryValues[index])[0].content}</p>
-                <p className="text-dimWhite">Source: <a href={Object.values(summaryValues[index])[0].source} target="_blank">Wikipedia</a></p>
+                <p className="text-dimWhite">Source: <a href={Object.values(summaryValues[index])[0].source} target="_blank" rel="noreferrer">Wikipedia</a></p>
             </PlanetSummary>
             <PlanetDetailsList>
                 <PlanetDetailsItem>

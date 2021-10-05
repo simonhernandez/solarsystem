@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Theme from "./commons/Theme";
-import styled from "styled-components";
 import GlobalStyle from "./styles/GlobalStyles";
 import { Wrapper } from "./styles/Wrapper.styled";
 import Planet from "./components/planet/Planet";
@@ -8,8 +7,8 @@ import data from "./data/data";
 
 function App() {
 
-  const [planets, setPlanets] = useState(data);
-  
+  const planets = data;
+
   const [value, setValue] = useState(0);
 
   const [toggleList, setToggleList] = useState(false);

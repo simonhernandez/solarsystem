@@ -2,7 +2,6 @@ import { createGlobalStyle } from "styled-components";
 import hamburgerIcon from "../assets/icon-hamburger.svg";
 import chevronIcon from "../assets/icon-chevron.svg";
 import starsBg from "../assets/background-stars.svg";
-import Theme from "../commons/Theme";
 
 const GlobalStyle = createGlobalStyle`
 
