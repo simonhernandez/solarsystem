@@ -245,7 +245,7 @@ const GlobalStyle = createGlobalStyle`
                 padding: 0 ${(props) => props.theme.space.s1xx};
                 height: 100vh;
                 width: 100%;
-                transform: translateY(-800px);
+                transform: translateY(-900px);
                 transition: .45s ease-out transform;
 
                 &.isOpen{
